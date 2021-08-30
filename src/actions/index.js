@@ -3,7 +3,7 @@ export const SET_MEAL_DETAILS = 'SET_MEAL_DETAILS';
 
 export const setMeals = (meals) => ({
   type: SET_MEAL,
-  payload: meals,
+  payload: meals || [],
 });
 
 export const setMealDetails = (meal) => ({
