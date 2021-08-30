@@ -6,6 +6,7 @@ import { getMeals } from '../reducers/mealsList';
 
 import Main from '../components/Main';
 import SearchBar from '../components/SearchBar';
+import MealImage from '../components/MealImage';
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -24,9 +25,14 @@ const Home = () => {
     <div>
       <h1> WelcomeFood lover</h1>
       <SearchBar setSearchTerm={setSearchTerm} />
-      {meals.map((meal) => (
+      <Main header={searchTerm ? 'Search Results' : 'All Meals'}>
+        {meals.map((meal) => (
+          <MealImage key={meal.idMeal} image={`${meal.strMealThumb}/preview`} />
+        ))}
+      </Main>
+      {/* {meals.map((meal) => (
         <Main key={meal.idMeal} meal={meal} />
-      ))}
+      ))} */}
     </div>
   );
 };

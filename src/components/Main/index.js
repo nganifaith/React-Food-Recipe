@@ -2,24 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Content, Wrapper } from './Main.styles';
-import MealImage from '../MealImage';
 
-const Main = ({ meal }) => (
+const Main = ({ header, children }) => (
   <Wrapper>
-    <Content>
-      <MealImage image={`${meal.strMealThumb}/preview`} />
-      <h1>{meal.strMeal}</h1>
-      <div>{meal.strArea}</div>
-    </Content>
+    <h1>{header}</h1>
+    <Content>{children}</Content>
   </Wrapper>
 );
 
 Main.propTypes = {
-  meal: PropTypes.shape({
-    strMeal: PropTypes.string.isRequired,
-    strArea: PropTypes.string.isRequired,
-    idMeal: PropTypes.string.isRequired,
-    strMealThumb: PropTypes.string.isRequired,
-  }).isRequired,
+  header: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };
 export default Main;
