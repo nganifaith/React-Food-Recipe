@@ -5,9 +5,10 @@ import { searchMeals } from '../API';
 import { getMeals } from '../reducers/mealsList';
 
 import Main from '../components/Main';
+import SearchBar from '../components/SearchBar';
 
 const Home = () => {
-  const [searchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
   const dispatch = useDispatch();
   const meals = useSelector(getMeals);
   useEffect(() => {
@@ -21,8 +22,8 @@ const Home = () => {
   }, [searchTerm]);
   return (
     <div>
-      <h1> Food lover</h1>
-      <div>Welcome</div>
+      <h1> WelcomeFood lover</h1>
+      <SearchBar setSearchTerm={setSearchTerm} />
       {meals.map((meal) => (
         <Main key={meal.idMeal} meal={meal} />
       ))}
