@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Image = styled.img`
+export const Image = styled.img`
   width: 100%;
   max-width: 720px;
   transition: all 0.3s;
@@ -19,6 +19,20 @@ const Image = styled.img`
     to {
       opacity: 1;
     }
+  }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+  padding: 2px;
+
+  h1 {
+    border-right: 2px solid var(--medGrey);
+    font-size: var(--fontMed);
+    padding: 2px;
   }
 `;
 

@@ -1,13 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   :root {
     --maxWidth: 1280px;
     --white: #fff;
     --lightGrey: #eee;
     --medGrey: #353535;
     --darkGrey: #1c1c1c;
-    --fontBig: 1.5rem;
     --fontMed: 1.2rem;
     --fontSmall: 1rem;
   }
@@ -38,3 +37,5 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 `;
+
+export default GlobalStyles;

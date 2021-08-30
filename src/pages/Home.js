@@ -27,7 +27,7 @@ const Home = () => {
       <SearchBar setSearchTerm={setSearchTerm} />
       <Main header={searchTerm ? 'Search Results' : 'All Meals'}>
         {meals.map((meal) => (
-          <MealImage key={meal.idMeal} image={`${meal.strMealThumb}/preview`} />
+          <MealImage key={meal.idMeal} meals={meal} />
         ))}
       </Main>
       {/* {meals.map((meal) => (
