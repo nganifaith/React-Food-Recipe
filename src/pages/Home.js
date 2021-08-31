@@ -23,7 +23,6 @@ const Home = () => {
   }, [searchTerm]);
   return (
     <div>
-      <h1> WelcomeFood lover</h1>
       <SearchBar setSearchTerm={setSearchTerm} />
       <Main header={searchTerm ? 'Search Results' : 'All Meals'}>
         {meals.map((meal) => (

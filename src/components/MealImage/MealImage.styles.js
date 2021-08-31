@@ -32,7 +32,8 @@ export const Content = styled.div`
   h1 {
     border-right: 2px solid var(--medGrey);
     font-size: var(--fontMed);
-    padding: 2px;
+    padding-right: 2px;
+    margin-right: 5px;
   }
 `;
 
