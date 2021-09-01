@@ -12,7 +12,7 @@ it('renders correctly', () => {
     .create(
       <Provider store={store}>
         <Home />
-      </Provider>
+      </Provider>,
     )
     .toJSON();
   expect(home).toMatchSnapshot();
