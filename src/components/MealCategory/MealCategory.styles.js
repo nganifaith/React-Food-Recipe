@@ -9,7 +9,14 @@ export const Content = styled.div`
   margin: 5px;
   padding: 10px;
 
-  div {
+  button {
     padding: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+
+  button.selected {
+    background: cornsilk;
   }
 `;
