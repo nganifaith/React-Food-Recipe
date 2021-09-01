@@ -20,10 +20,7 @@ export const getIngredients = (state) => {
       const ingredient = details[`strIngredient${i}`];
       const measure = details[`strMeasure${i}`];
       if (ingredient) {
-        const image = `${INGREDIENT_THUMBNAIL}${ingredient.replace(
-          ' ',
-          '-',
-        )}.png`;
+        const image = `${INGREDIENT_THUMBNAIL}${ingredient}.png`;
         ingredients.push({
           i,
           ingredient,
