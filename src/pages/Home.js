@@ -29,9 +29,6 @@ const Home = () => {
           <MealImage key={meal.idMeal} meals={meal} />
         ))}
       </Main>
-      {/* {meals.map((meal) => (
-        <Main key={meal.idMeal} meal={meal} />
-      ))} */}
     </div>
   );
 };

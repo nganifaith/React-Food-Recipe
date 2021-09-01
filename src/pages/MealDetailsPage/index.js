@@ -1,0 +1,52 @@
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useParams } from 'react-router';
+import { setMealDetails } from '../../actions';
+import { getMealDetails } from '../../API';
+import { getDetails, getIngredients } from '../../reducers/mealDetails';
+import {
+  Content,
+  Ingredients,
+  Main,
+  Recipe,
+  Wrapper,
+  IngredientsImage,
+  MealImage,
+} from './MealDetailsPage.styles';
+
+const MealDetails = () => {
+  const dispatch = useDispatch();
+  const { id } = useParams();
+
+  const mealDetail = useSelector(getDetails);
+  const mealIngredients = useSelector(getIngredients);
+
+  useEffect(() => {
+    getMealDetails(id).then(({ meals }) => {
+      dispatch(setMealDetails(meals[0]));
+    });
+  }, [id]);
+  return (
+    <Main>
+      <Wrapper>
+        <Content>
+          <MealImage src={`${mealDetail.strMealThumb}/preview`} alt="Meal" />
+          <Ingredients>
+            {mealIngredients.map(({
+              ingredient, i, image, measure,
+            }) => (
+              <div key={i}>
+                <IngredientsImage src={image} alt="Ingredient Image" />
+                {ingredient}
+                {measure}
+              </div>
+            ))}
+          </Ingredients>
+        </Content>
+      </Wrapper>
+      <Recipe>{mealDetail.strInstructions}</Recipe>
+    </Main>
+  );
+};
+
+export default MealDetails;

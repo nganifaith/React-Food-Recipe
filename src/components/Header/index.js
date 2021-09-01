@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import {
   NavBar, Wrapper, Content, LogoImage,
 } from './Header.styles';
@@ -9,7 +11,7 @@ const Header = () => (
     <Content>
       <LogoImage src={Logo} />
       <NavBar>
-        <h3>Home</h3>
+        <Link to="/">Home</Link>
         <h3>Area</h3>
       </NavBar>
     </Content>
