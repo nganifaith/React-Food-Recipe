@@ -9,7 +9,7 @@ import {
   Ingredients,
   Main,
   Recipe,
-  Wrapper,
+  ImageWrapper,
   IngredientsImage,
   MealImage,
 } from './MealDetailsPage.styles';
@@ -28,23 +28,29 @@ const MealDetails = () => {
   }, [id]);
   return (
     <Main>
-      <Wrapper>
-        <Content>
+      <Content>
+        <ImageWrapper>
           <MealImage src={`${mealDetail.strMealThumb}/preview`} alt="Meal" />
-          <Ingredients>
-            {mealIngredients.map(({
-              ingredient, i, image, measure,
-            }) => (
-              <div key={i}>
-                <IngredientsImage src={image} alt="Ingredient Image" />
-                {ingredient}
-                {measure}
-              </div>
-            ))}
-          </Ingredients>
-        </Content>
-      </Wrapper>
-      <Recipe>{mealDetail.strInstructions}</Recipe>
+          <h1>{mealDetail.strMeal}</h1>
+        </ImageWrapper>
+
+        <Ingredients>
+          {mealIngredients.map(({
+            ingredient, i, image, measure,
+          }) => (
+            <div key={i}>
+              <IngredientsImage src={image} alt="Ingredient Image" />
+              {ingredient}
+              {measure}
+            </div>
+          ))}
+        </Ingredients>
+      </Content>
+
+      <Recipe>
+        <h3>Recipe</h3>
+        {mealDetail.strInstructions}
+      </Recipe>
     </Main>
   );
 };
