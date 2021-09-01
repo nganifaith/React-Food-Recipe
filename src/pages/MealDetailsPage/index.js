@@ -40,8 +40,16 @@ const MealDetails = () => {
           }) => (
             <div key={i}>
               <IngredientsImage src={image} alt="Ingredient Image" />
-              {ingredient}
-              {measure}
+              <div>
+                <span>
+                  {' '}
+                  {measure}
+                </span>
+                <span>
+                  {' '}
+                  {ingredient}
+                </span>
+              </div>
             </div>
           ))}
         </Ingredients>

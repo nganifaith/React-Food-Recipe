@@ -65,6 +65,10 @@ export const IngredientsImage = styled.img`
       opacity: 1;
     }
   }
+
+  span {
+    padding: 10px;
+  }
 `;
 
 export const Recipe = styled.div`
