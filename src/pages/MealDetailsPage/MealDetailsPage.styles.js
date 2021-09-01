@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 export const Main = styled.div`
-  margin: 10px 0 0 20px;
+  margin: 0;
 `;
 export const ImageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  min-width: 300px;
 
   h1 {
     color: black;
@@ -15,17 +16,17 @@ export const ImageWrapper = styled.div`
 `;
 
 export const Content = styled.div`
-  max-width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 50px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
 `;
 export const MealImage = styled.img`
   max-width: 300px;
-  height: 400px;
   top: 5px;
   box-shadow: 5px 5px 10px 5px rgb(220 219 219 / 92%);
+  object-fit: cover;
 `;
 export const Ingredients = styled.div`
   display: flex;
@@ -35,6 +36,8 @@ export const Ingredients = styled.div`
   padding: 2px;
   flex-wrap: wrap;
   flex: 1;
+  min-width: 300px;
+  max-width: 800px;
 `;
 
 export const IngredientsImage = styled.img`

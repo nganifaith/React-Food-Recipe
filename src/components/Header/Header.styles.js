@@ -2,7 +2,12 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   width: 100%;
-  background: Grey;
+  box-shadow: 0 0px 6px 0 grey;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--white);
+  padding: 0 10px;
 `;
 export const Content = styled.div`
   display: flex;
@@ -11,11 +16,32 @@ export const Content = styled.div`
   justify-content: space-between;
 `;
 export const LogoImage = styled.img`
-  width: 100px;
-  height: 100px;
-  margin: 0 20px;
+  height: 70px;
+  object-fit: contain;
 `;
 export const NavBar = styled.nav`
-  display: inline-block;
+  display: flex;
   align-items: center;
+
+  & > * {
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:active {
+    text-decoration: underline;
+  }
 `;
