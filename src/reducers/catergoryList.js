@@ -9,4 +9,4 @@ export default function CatergoryListReducer(state = [], action) {
   }
 }
 
-export const getcatergories = (state) => state.catergoryList;
+export const getCatergories = (state) => state.catergoryList;

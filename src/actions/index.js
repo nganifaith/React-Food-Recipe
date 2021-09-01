@@ -12,7 +12,7 @@ export const setMealDetails = (meal) => ({
   payload: meal,
 });
 
-export const setCAetrgories = (catergories) => ({
+export const setCatergories = (catergories) => ({
   type: SET_CATERGORIES,
   payload: catergories,
 });

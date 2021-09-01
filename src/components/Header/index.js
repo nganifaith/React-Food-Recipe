@@ -12,7 +12,7 @@ const Header = () => (
       <LogoImage src={Logo} />
       <NavBar>
         <Link to="/">Home</Link>
-        <h3>Area</h3>
+        <Link to="/catergories">Catergories</Link>
       </NavBar>
     </Content>
   </Wrapper>
