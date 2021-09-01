@@ -19,7 +19,7 @@ MealImage.propTypes = {
     idMeal: PropTypes.string.isRequired,
     strMealThumb: PropTypes.string.isRequired,
     strMeal: PropTypes.string.isRequired,
-    strArea: PropTypes.string.isRequired,
+    strArea: PropTypes.string,
   }).isRequired,
 };
 
