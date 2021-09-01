@@ -9,7 +9,7 @@ const MealImage = ({ meals }) => (
     <Image src={`${meals.strMealThumb}/preview`} alt="movie-thumb" />
     <Content>
       <h1>{meals.strMeal}</h1>
-      <h3>{meals.strArea}</h3>
+      {meals.strArea ? <h3>{meals.strArea}</h3> : ''}
     </Content>
   </Link>
 );

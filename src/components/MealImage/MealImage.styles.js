@@ -30,10 +30,13 @@ export const Content = styled.div`
   padding: 2px;
 
   h1 {
-    border-right: 2px solid var(--medGrey);
     font-size: var(--fontMed);
     padding-right: 2px;
     margin-right: 5px;
+
+    &:not(:last-child) {
+      border-right: 2px solid var(--medGrey);
+    }
   }
 `;
 
