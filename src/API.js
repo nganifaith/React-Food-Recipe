@@ -7,5 +7,7 @@ async function sendRequest(url) {
   return response.json();
 }
 
-export const searchMeals = async (searchTerm) => sendRequest(`search.php?s=${searchTerm}`);
-export const getMealDetails = async (mealId) => sendRequest(`lookup.php?i=${mealId}`);
+export const searchMeals = (searchTerm) => sendRequest(`search.php?s=${searchTerm}`);
+export const getMealDetails = (mealId) => sendRequest(`lookup.php?i=${mealId}`);
+export const getAllCatergory = () => sendRequest('list.php?c=list');
+export const getMealsByCategory = async (catergoryName) => sendRequest(`filter.php?c=${catergoryName}`);
