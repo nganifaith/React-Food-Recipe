@@ -10,20 +10,23 @@ import MealImage from '../components/MealImage';
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [error, setError] = useState('');
   const dispatch = useDispatch();
   const meals = useSelector(getMeals);
   useEffect(() => {
+    setError('');
     searchMeals(searchTerm)
       .then(({ meals }) => {
         dispatch(setMeals(meals));
       })
-      .catch((e) => {
-        console.error(e);
+      .catch(() => {
+        setError('Error fetching Data');
       });
   }, [searchTerm]);
   return (
     <div>
       <SearchBar setSearchTerm={setSearchTerm} />
+      <span>{error}</span>
       <Main header={searchTerm ? 'Search Results' : 'All Meals'}>
         {meals.map((meal) => (
           <MealImage key={meal.idMeal} meals={meal} />
