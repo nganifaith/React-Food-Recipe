@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Food Recipe App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+This project implements a simple food recipe SPA with data gotten from the test API of themealdb.com. The project is divided into two main sections:
 
-### `npm start`
+## Home Section:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    Returns all meals with name and meal area.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+##### Some functionalities
 
-### `npm test`
+- search meal using the search bar
+- view meal details(recipe) by selecting a meal.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Category section:
 
-### `npm run build`
+    Returns All categories
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The main functionality is to filter meals by categories
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Calculator
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![home](./home.png)
 
-### `npm run eject`
+### Home page
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![detail](./details.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Meal Detail page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Built With
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- React
 
-## Learn More
+# Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Clone App](https://github.com/nganifaith/React-Food-Recipe/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- cd to React-Food-Recipe
+- run `npm install`
+- run `git checkout feature`
+- run `npm start` app opens on [http://localhost:3000](http://localhost:3000)
 
-### Code Splitting
+## Test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- run test `npm test`
+  ![test](./test.png)
 
-### Analyzing the Bundle Size
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Basic knowledge about React:
 
-### Making a Progressive Web App
+## Live site
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[Live](https://612f5ef947dcd8d93ebd7552--fervent-sinoussi-2ae78f.netlify.app/)
 
-### Advanced Configuration
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+👤 **Ngani Faith**
 
-### Deployment
+- GitHub: [@nganifaith](https://github.com/nganifaith)
+- Twitter: [@Bright_Ngani](https://twitter.com/bright_ngani)
+- LinkedIn: [Ngani Faith](https://www.linkedin.com/in/ngani-faith/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🤝 Contributing
 
-### `npm run build` fails to minify
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to check the [issues page](https://github.com/nganifaith/React-Food-Recipe/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
