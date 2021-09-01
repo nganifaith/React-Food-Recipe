@@ -20,13 +20,9 @@ const CategoryPage = () => {
 
   useEffect(() => {
     setError('');
-    getMealsByCategory(category)
-      .then(({ meals }) => {
-        dispatch(setMeals(meals));
-      })
-      .catch(() => {
-        setError('Error fetching Data');
-      });
+    getMealsByCategory(category).then(({ meals }) => {
+      dispatch(setMeals(meals));
+    });
   }, [category]);
 
   return (

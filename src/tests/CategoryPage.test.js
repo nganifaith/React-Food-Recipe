@@ -1,3 +1,4 @@
+import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
@@ -12,8 +13,18 @@ it('renders correctly', () => {
     .create(
       <Provider store={store}>
         <CategoryPage />
-      </Provider>,
+      </Provider>
     )
     .toJSON();
   expect(home).toMatchSnapshot();
+});
+
+it('renders banner', () => {
+  render(
+    <Provider store={store}>
+      <CategoryPage />
+    </Provider>
+  );
+  const mealTitle = screen.getByRole('heading');
+  expect(mealTitle).toBeInTheDocument();
 });
