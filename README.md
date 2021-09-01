@@ -58,7 +58,7 @@ This project implements a simple food recipe SPA with data gotten from the test 
 
 ## Live site
 
-[Live](https://612f5ef947dcd8d93ebd7552--fervent-sinoussi-2ae78f.netlify.app/)
+[Live](https://fervent-sinoussi-2ae78f.netlify.app/)
 
 ## Author
 
