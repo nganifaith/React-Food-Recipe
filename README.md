@@ -47,11 +47,14 @@ This project implements a simple food recipe SPA with data gotten from the test 
 ## Test
 
 - run test `npm test`
-  ![test](./test.png)
 
 ### Prerequisites
 
-Basic knowledge about React:
+- Knownledge of React
+- JS API calls
+- Redux
+- React styled-components
+- React Router
 
 ## Live site
 
