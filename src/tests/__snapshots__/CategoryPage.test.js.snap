@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-gKseQn"
+>
+  <div
+    className="sc-fubCzh"
+  >
+    <div
+      className="sc-iBPTik"
+    >
+      <div
+        className="sc-bdfBQB"
+      >
+        <div
+          className="sc-gsTEea dPzzKC"
+        />
+      </div>
+      <span>
+        
+      </span>
+    </div>
+    <div
+      className="sc-eCstlR iYFpZf"
+    >
+      <h1>
+        Category ~ Pasta
+      </h1>
+      <div
+        className="sc-jSgvzq ehCKSs"
+      />
+    </div>
+  </div>
+</div>
+`;
