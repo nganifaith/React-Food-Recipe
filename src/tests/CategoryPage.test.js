@@ -13,7 +13,7 @@ it('renders correctly', () => {
     .create(
       <Provider store={store}>
         <CategoryPage />
-      </Provider>
+      </Provider>,
     )
     .toJSON();
   expect(home).toMatchSnapshot();
@@ -23,7 +23,7 @@ it('renders banner', () => {
   render(
     <Provider store={store}>
       <CategoryPage />
-    </Provider>
+    </Provider>,
   );
   const mealTitle = screen.getByRole('heading');
   expect(mealTitle).toBeInTheDocument();

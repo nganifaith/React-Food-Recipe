@@ -13,7 +13,7 @@ it('renders correctly', () => {
     .create(
       <Provider store={store}>
         <Home />
-      </Provider>
+      </Provider>,
     )
     .toJSON();
   expect(home).toMatchSnapshot();
@@ -23,7 +23,7 @@ it('renders banner', () => {
   render(
     <Provider store={store}>
       <Home />
-    </Provider>
+    </Provider>,
   );
   const searchIcon = screen.getByRole('img');
   expect(searchIcon).toBeInTheDocument();
@@ -33,7 +33,7 @@ it('renders banner', () => {
   render(
     <Provider store={store}>
       <Home />
-    </Provider>
+    </Provider>,
   );
   const searchBar = screen.getByRole('textbox');
   expect(searchBar).toBeInTheDocument();
@@ -43,7 +43,7 @@ it('renders banner', () => {
   render(
     <Provider store={store}>
       <Home />
-    </Provider>
+    </Provider>,
   );
   const mealSection = screen.getByRole('heading');
   expect(mealSection).toBeInTheDocument();
