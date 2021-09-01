@@ -15,13 +15,9 @@ const Home = () => {
   const meals = useSelector(getMeals);
   useEffect(() => {
     setError('');
-    searchMeals(searchTerm)
-      .then(({ meals }) => {
-        dispatch(setMeals(meals));
-      })
-      .catch(() => {
-        setError('Error fetching Data');
-      });
+    searchMeals(searchTerm).then(({ meals }) => {
+      dispatch(setMeals(meals));
+    });
   }, [searchTerm]);
   return (
     <div>
