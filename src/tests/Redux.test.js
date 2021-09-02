@@ -30,6 +30,6 @@ it('returns the initial Detail state', () => {
 
 it('returns the initial Detail state', () => {
   expect(MealDetailReducer(['Pasta'], setMealDetails(['Corba']))).not.toEqual(
-    []
+    [],
   );
 });
