@@ -7,6 +7,10 @@ it('returns the initial home state', () => {
 });
 
 it('returns the initial home state', () => {
+  expect(MealsListReducer(['Corba'], setMeals(['Corba']))).not.toEqual([]);
+});
+
+it('returns the initial home state', () => {
   expect(MealsListReducer(['Pasta'], setMeals(['Breakfast']))).toEqual([
     'Breakfast',
   ]);
@@ -30,6 +34,6 @@ it('returns the initial Detail state', () => {
 
 it('returns the initial Detail state', () => {
   expect(MealDetailReducer(['Pasta'], setMealDetails(['Corba']))).not.toEqual(
-    [],
+    []
   );
 });
