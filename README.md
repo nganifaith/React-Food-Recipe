@@ -21,7 +21,6 @@ This project implements a simple food recipe SPA with data gotten from the test 
 
 - The main functionality is to filter meals by categories
 
-## Calculator
 
 ![home](./home.png)
 
